@@ -1,0 +1,119 @@
+ FILE *dosya; //istenilen ilin dosyası
+   fopen("/Users/iclalcengel/Desktop/ str.csv","r");
+   int toplam_gunaraligi;
+   int depremsayisi;
+   int günbasinadepsay;
+   float enbdepdeg;
+   float enkdepdeg;
+   float deport;
+   float depmedyan;
+   int histdepsayisi;
+   FILE *yedek; //istenilen ilin dosyası
+   fopen("/Users/iclalcengel/Desktop/ yedek.csv","w+");
+   fcsanf (str, "% d");
+   int k;
+   for (int i=1; foef(str); i++)
+   {
+   	fprintf(yedek,"%d, %8i, %10s, %6f", i,struct date tarih, struct eartquake deprem.sehir, struct eartquake deprem.buyukluk);
+   	k=i;
+   }
+   toplam_gunaraligi=((struct date tarih.year[k] -struct date tarih.year[1] )*360) +((struct date tarih.month[k] -struct date tarih.month[1] )*30) +((struct date tarih.day[k] -struct date tarih.day[1] ))
+   printf("istatistiksel verilere gör olculen ilk deprem ile son deprem arasindaki zaman dilimi: %d\n\n", toplam_gunaraligi);
+   depremsayisi=k;
+   printf("istatistiksel verilere gör olculen zaman dilimi arasindaki deprem sayisi: %d\n\n", depremsayisi);
+   printf("istatistiksel verilere gör olculen ilk deprem ile son deprem arasindaki zaman dilimi: %f\n\n", (depremsayisi/toplam_gunaraligi));
+   for (int j=1; j<=k; j++)
+   { for(int i=1;i<=k;i++)
+   int a[],b[],c[];
+   a[j]=struct eartquake deprem.buyuklugu[j];
+   b[i]=struct eartquake deprem.buyuklugu[i];
+   if(a[j]<b[i])
+   else if (a[j]=b[i])
+   {
+   
+   c[]=b[i];
+   b[i]=a[j+1];
+   a[j+1]=c[];
+   
+   }
+   else
+   {
+   	c[]=b[i];
+   b[i]=a[j];
+   a[j]=c[];
+   }
+   float toplam=0;
+   toplam= toplam+a[j];
+   
+   }
+   	printf("olculen en buyuk deprem degeri: %f\n\n", a[k]);
+   	printf("olculen en kucuk deprem degeri: %f\n\n", a[1]);
+   	printf("ortalama deprem buyuklugu: %f\n\n"; (toplam /k));
+   	if (k%2==0) {
+   		int t= (k/2);
+   		deportanca=(a[t]+a[t+1])/2
+   		printf("ortanca deger: %f\n\n", deportanca);
+   	}
+   	else{
+   		int t= (k/2)+0.5;
+   		deportanca=a[t]
+   		printf("ortanca deger: %f\n\n", deportanca);
+	   }
+	for(i=1;i<=k;İ++){
+	
+   	if(a[i]>=0 && a[i]<2)
+	   {int a=0;
+	    a++;
+		}
+	else if(a[i]>=2 && a[i]<3)
+	   {int b=0;
+	    b++;
+		}
+	else if(a[i]>=3 && a[i]<4)
+	   {int c=0;
+	    c++;
+		}	
+	else if(a[i]>=4 && a[i]<5)
+	   {int d=0;
+	    d++;
+		}
+	else if(a[i]>=5 && a[i]<6)
+	   {int e=0;
+	    e++;
+		}
+	else if(a[i]>=6 && a[i]<7)
+	   {int f=0;
+	    f++;
+		}			
+	else if(a[i]>=7 && a[i]<8)
+	   {int g=0;
+	    g++;
+		}
+	else if(a[i]>=8 && a[i]<9)
+	   {int h=0;
+	    h++;
+		}
+	else (a[i]>=9)
+	   {int m=0;
+	    m++;
+		}			
+			
+			
+		
+			
+
+
+}
+    printf("[0,2)rihter olcegine sahip deprem sayisi: %d\n", a);
+   	printf("[2,3)rihter olcegine sahip deprem sayisi: %d\n", b);
+   	printf("[3,4) rihter olcegine sahip deprem sayisi: %d\n", c);
+   	printf("[4,5) rihter olcegine sahip deprem sayisi: %d\n", d);
+   	printf("[5,6) rihter olcegine sahip deprem sayisi: %d\n", e);
+   	printf("[6,7) rihter olcegine sahip deprem sayisi: %d\n", f);
+   	printf("[7,8) rihter olcegine sahip deprem sayisi: %d\n", g);
+   	printf("[8,9) rihter olcegine sahip deprem sayisi: %d\n", h);
+	printf("9 ve 9 rihter olceginden büyük değere sahip deprem sayisi: %d", m);
+   
+   fclose(yedek);
+   fclose(str);
+   
