@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
         if(dosya==NULL) {
         printf("Dosya bulunamadi.");}
         fscanf( dosya, "%s, % s,%f",&struct eartquake deprem.sehir[],struct date tarih, struct eartquake.buyukluk);//  ilk açılan dosyadan okur 
-        fprintf(str,"%s, %i, %f",&struct date tarih,&struct eartquake deprem.sehir[], 	&struct eartquake.buyukluk); // istenilen şehir dosyasına yazar
+        fprintf(str,"%i, %s, %f",&struct date tarih,&struct eartquake deprem.sehir[], 	&struct eartquake.buyukluk); // istenilen şehir dosyasına yazar
         fclose(str)
         
         
@@ -49,34 +49,36 @@ int main(int argc, char *argv[]) {
 	  {
 	  
 	  FILE *yedek;
+	  fopen("/Users/iclalcengel/Desktop/ *str.csv","r+");
 	  yedek=fopen("/Users/iclalcengel/Desktop/ *str.csv","r+");
-	  fprintf(yedek,"%s, %i, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk);
+	  fprintf(yedek,"%i, %s, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk);
        }
        else if(struct date tarih.year[i])==struct date tarih.year [j])
 	  {
 	  	if( if(struct date tarih.month[i])< struct date tarih.month [j])
 	     {FILE *yedek;
 	      yedek=fopen("/Users/iclalcengel/Desktop/ *str.csv","a+");
-	     fprintf(yedek,"%s, %i, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk);)
+	     fprintf(yedek,"%i, %s, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk);)
 	    }
 	    else if(struct date tarih.month[i])==struct date tarih.month [j])
 	   {
 	   	if( if(struct date tarih.day[i])< struct date tarih.day [j])
 	     {FILE *yedek;
 	      yedek=fopen("/Users/iclalcengel/Desktop/ *str.csv","a+");
-	     fprintf(yedek,"%s, %i, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk);)
+	     fprintf(yedek,"%i, %s, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk);)
 	   }
 	  if( if(struct date tarih.day[i])== struct date tarih.day [j])
 	    {
 		
 	    FILE *yedek;
 	  yedek=fopen("/Users/iclalcengel/Desktop/ *str.csv","r+");
-	  fprintf(yedek,"%s, %i, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk); 
+	  fprintf(yedek,"%i, %s, %f",&struct date tarih,&struct eartquake deprem.sehir[], &struct eartquake.buyukluk); 
        }
     }
-    fscanf( yedek, "%s, % s,%f",&struct eartquake deprem.sehir[],struct date tarih, struct eartquake.buyukluk);
-    fprintf( str, "%s, % s,%f",&struct eartquake deprem.sehir[],struct date tarih, struct eartquake.buyukluk);
-     
+    fscanf( yedek, "%i, % s,%f",struct date tarih,&struct eartquake deprem.sehir[], struct eartquake.buyukluk);
+    fprintf( str, "%i, % s,%f",struct date tarih,&struct eartquake deprem.sehir[], struct eartquake.buyukluk);
+    fclose (yedek); 
+    fclose(str);
 	return 0;
 }
 
@@ -89,3 +91,4 @@ int main(int argc, char *argv[]) {
    	 
    	 
    }
+   
