@@ -17,6 +17,7 @@ void siralama(){
 	for(i = 0 ; i  < sayi ;i++){
 		*(kosul + i) = (char *)malloc(20);
 	}
+	printf("\n");
     for (j = 0 ;  j < sayi;j++){
 			do{
 	   printf("Hangi parametreye gore siralamak istersiniz\n1-Ilce\n2-Zaman\n3-Buyukluk: ");
@@ -24,19 +25,22 @@ void siralama(){
 	}while(secim < 1 || secim > 3);
     array[j] = secim;
 	}
-	
+	printf("\n");
 	fflush(stdin);
 	
  	for (k = 0; k < sayi ;k++){
  		if(*(array + k) == 1){
 		printf("Ilcenizin ismini giriniz: ");
 	    gets( *(kosul + k) );
+	    printf("\n");
 	}else if( *(array + k) == 2){
 		printf("Zamani giriniz: ");
 	    gets( *(kosul + k) );
+	    printf("\n");
 	}else{
 		printf("Buyuklugu giriniz: ");
 		gets(  *(kosul + k) );
+	    printf("\n");
 	}
 	
     	
@@ -45,3 +49,4 @@ void siralama(){
 	 	
  		
 	}	
+ 			
