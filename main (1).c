@@ -5,6 +5,7 @@
 #include "sorgula.h" //sorgulama yapmak icin olusturulmus kutuphane
 #include "illeregoreayristirma.h" //illere gore ayristirma yapilmak icin olusturulmus kutuphane
 #include "analiz.h" //analiz icin olusturulmus kutuphane
+#include "siralama.h" //siralama icin olusturulmus kutuphane
 
 int main () {
     
