@@ -29,7 +29,7 @@ switch(secim) {  //menu secim sonucu icin olusturulan switch yapisi
     
     case 2:
     
-    //siralama(); siralama fonksiyonu Ensar Yaman tarafindan yazilacaktir.
+    siralama(); //siralama icin yazilan fonksiyon
     goto dongu;   //kullanici cikisi secmedigi surece tekrar menu ekrani getirilir.
     
     case 3:
